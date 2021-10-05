@@ -1,0 +1,29 @@
+package com.train;
+
+import java.util.Scanner;
+
+public class checkalpha {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		checkalpha ob = new checkalpha();
+		ob.alpha();
+		
+
+	}
+	
+	public static void alpha() {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter a character");
+		char c= sc.next().charAt(0);
+		if((c>='A' && c<='Z') || (c>='a' && c<='z')) {
+			System.out.println(c+" is an alphabet");
+		}
+		else {
+			System.out.println(c+" is not an alphabet");
+		}
+		
+		
+	}
+
+}
